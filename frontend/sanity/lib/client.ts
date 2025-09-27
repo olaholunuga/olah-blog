@@ -9,7 +9,7 @@ export const client = createClient({
   apiVersion,
   useCdn: true,
   perspective: 'published',
-  token, // Required if you have a private dataset
+  token: process.env.SANITY_API_READ_TOKEN, // Required if you have a private dataset
   stega: {
     studioUrl,
     // Set logger to 'console' for more verbose logging
