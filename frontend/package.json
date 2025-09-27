@@ -2,16 +2,18 @@
   "name": "frontend",
   "private": true,
   "scripts": {
-    "prebuild": "npm run typegen",
+    "prebuild": "pnpm run typegen",
     "build": "next build",
-    "predev": "npm run typegen",
+    "predev": "pnpm run typegen",
     "dev": "next dev --turbopack",
     "lint": "next lint",
     "start": "next start",
     "type-check": "tsc --noEmit",
-    "typegen": "sanity typegen generate"
+    "typegen": "pnpm --filter studio exec sanity typegen generate"
   },
   "dependencies": {
+    "@portabletext/react": "^4.0.3",
+    "@sanity/asset-utils": "^2.3.0",
     "@sanity/client": "^7.9.0",
     "@sanity/image-url": "^1.1.0",
     "@sanity/uuid": "^3.0.2",
