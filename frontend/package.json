@@ -5,7 +5,7 @@
     "prebuild": "pnpm run typegen",
     "build": "next build",
     "predev": "pnpm run typegen",
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
     "type-check": "tsc --noEmit",
