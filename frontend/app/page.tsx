@@ -29,9 +29,9 @@ export default async function Page() {
                     className="underline decoration-brand hover:text-brand underline-offset-8 hover:underline-offset-4 transition-all ease-out"
                     href="olaoluwaolunuga.me"
                   >
-                    olaholunuga's
+                    olaholunuga&apos;s
                   </Link>
-                  
+
                   <div
                     className="underline decoration-black text-framework underline-offset-8 hover:underline-offset-4 transition-all ease-out"
                   >
